@@ -1,0 +1,16 @@
+{
+    "contents" : "---\nlayout: default\nroot: \"\"\n---\n<div class=\"blog-index\">  \n  {% assign post = site.posts.first %}\n  {% if post.title %}<h2>{{ post.title }}</h2>{% endif %}\n  {{ post.content }}\n</div>",
+    "created" : 1390324221395.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3786887530",
+    "id" : "4DAF5A2D",
+    "lastKnownWriteTime" : 1390324865,
+    "path" : "~/GitHub/lmjackson.github.io/knitr/index.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

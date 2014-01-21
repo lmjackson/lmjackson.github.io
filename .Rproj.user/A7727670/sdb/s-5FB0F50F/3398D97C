@@ -1,0 +1,15 @@
+{
+    "contents" : "---\nlayout: layout\ntitle: Jekyll Base\n---\n\n<div class=\"content\">\n  <div class=\"related\">\n    <ul>\n      {% for post in site.posts %}\n      <li>\n\t<span>{{ post.date | date: \"%B %e, %Y\" }}</span> <a href=\"{{ post.url }}\">{{ post.title }}</a>\n      </li>\n      {% endfor %}\n    </ul>\n  </div>\n</div>\n",
+    "created" : 1390324211572.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2361688601",
+    "id" : "3398D97C",
+    "lastKnownWriteTime" : 1390320040,
+    "path" : "~/GitHub/lmjackson.github.io/jekyll_home.html",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "html"
+}
