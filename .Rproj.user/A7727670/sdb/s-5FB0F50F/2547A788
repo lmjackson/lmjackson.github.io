@@ -1,0 +1,16 @@
+{
+    "contents" : "---\nlayout: default\nroot: \"../../../../\"\ntitle: \"Baby's first blog!\"\n---\n\nThis is my first blog post. Don't you love it?\n\n```{r, echo=TRUE, warning=FALSE}\nlibrary(ggplot2)\nx <- rnorm(1000)\n\nqplot(x, geom=\"histogram\")\n\n```\n\nWoo! **Bold important words!**\n\n###Conclusion\nRead this shiz!",
+    "created" : 1390328618812.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "585809535",
+    "id" : "2547A788",
+    "lastKnownWriteTime" : 1390328901,
+    "path" : "~/GitHub/lmjackson.github.io/knitr/2014-01-21-First-Post.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}
