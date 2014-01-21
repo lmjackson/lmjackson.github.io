@@ -2,16 +2,3 @@ auto: true
 markdown: rdiscount
 permalink: /:year/:month/:day/:title
 rdiscount extensions: [smart]
-navigation:
-- text: Blog
-  url: /index.html
-- text: Projects
-  url: /projects.html
-- text: Teaching
-  url: /teaching.html
-- text: Coursework
-  url:/coursework.html
-- text: CV
-  url: /Lindsey_Jackson_CV.pdf
-- text: Fun Stuff
-  url: /funstuff.html
