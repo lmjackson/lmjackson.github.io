@@ -1,0 +1,15 @@
+{
+    "contents" : "<!DOCTYPE HTML>\n\n<html>\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <meta name=\"author\" content=\"Your Name\" />\n    <title>{{ page.title }}</title>\n  </head>\n  <body>\n    <header>\n      <h1><a href=\"/\">{{ page.title }}</a></h1>\n    </header>\n    <section>\n      {{ content }}\n    </section>\n  </body>\n</html>\n",
+    "created" : 1390326099184.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "243139834",
+    "id" : "BE122380",
+    "lastKnownWriteTime" : 1390320040,
+    "path" : "~/GitHub/lmjackson.github.io/_layouts/layout.html",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "html"
+}
