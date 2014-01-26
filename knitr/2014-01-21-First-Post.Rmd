@@ -4,9 +4,8 @@ root: "../../../../"
 title: "Baby's first blog!"
 ---
 
-```{r, echo=FALSE, results='hide'}
+```{r, echo=FALSE, include=FALSE}
 render_jekyll()
-opts_chunk$set(fig.path='{{ page.root }}figure/')
 ```
 
 

@@ -1,12 +1,12 @@
 {
-    "contents" : "---\nlayout: blog\nroot: \"../../../../\"\ntitle: \"Baby's first blog!\"\n---\n\n```{r, echo=FALSE, results='hide'}\nrender_jekyll()\nopts_chunk$set(fig.path='{{ page.root }}figure/')\n```\n\n\nThis is my first blog post. Don't you love it?\n\n```{r, echo=TRUE, warning=FALSE}\nlibrary(ggplot2)\nx <- rnorm(1000)\n\nqplot(x, geom=\"histogram\")\n\n```\n\nWoo! **Bold important words!**\n\n\nConclusion\n=========================\nRead this shiz!",
+    "contents" : "---\nlayout: blog\nroot: \"../../../../\"\ntitle: \"Baby's first blog!\"\n---\n\n```{r, echo=FALSE, include=FALSE}\nrender_jekyll()\n```\n\n\nThis is my first blog post. Don't you love it?\n\n```{r, echo=TRUE, warning=FALSE}\nlibrary(ggplot2)\nx <- rnorm(1000)\n\nqplot(x, geom=\"histogram\")\n\n```\n\nWoo! **Bold important words!**\n\n\nConclusion\n=========================\nRead this shiz!",
     "created" : 1390328618812.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "207354771",
+    "hash" : "585194176",
     "id" : "2547A788",
-    "lastKnownWriteTime" : 1390697538,
+    "lastKnownWriteTime" : 1390699620,
     "path" : "~/GitHub/lmjackson.github.io/knitr/2014-01-21-First-Post.Rmd",
     "properties" : {
         "tempName" : "Untitled1"

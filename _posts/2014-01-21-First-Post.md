@@ -25,7 +25,7 @@ qplot(x, geom = "histogram")
 ## this.
 {% endhighlight %}
 
-![plot of chunk unnamed-chunk-2]({{ page_root }}figure/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2]({{ page.root }}figure/unnamed-chunk-2.png) 
 
 
 Woo! **Bold important words!**
