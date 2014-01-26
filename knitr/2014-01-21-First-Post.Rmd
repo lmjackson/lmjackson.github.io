@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: blog
 root: "../../../../"
 title: "Baby's first blog!"
 ---
 
 ```{r, echo=FALSE, results='hide'}
-opts_chunk$set(fig.path='../figure')
+render_jekyll()
+opts_chunk$set(fig.path='{{ page.root }}figure/')
 ```
 
 
