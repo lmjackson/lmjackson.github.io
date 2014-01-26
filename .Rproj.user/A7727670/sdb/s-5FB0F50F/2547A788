@@ -1,12 +1,12 @@
 {
-    "contents" : "---\nlayout: default\nroot: \"../../../../\"\ntitle: \"Baby's first blog!\"\n---\n\nThis is my first blog post. Don't you love it?\n\n```{r, echo=TRUE, warning=FALSE}\nlibrary(ggplot2)\nx <- rnorm(1000)\n\nqplot(x, geom=\"histogram\")\n\n```\n\nWoo! **Bold important words!**\n\n###Conclusion\nRead this shiz!",
+    "contents" : "---\nlayout: default\nroot: \"../../../../\"\ntitle: \"Baby's first blog!\"\n---\n\n```{r, echo=FALSE, results='hide'}\nopts_chunk$set(fig.path='../figure')\n```\n\n\nThis is my first blog post. Don't you love it?\n\n```{r, echo=TRUE, warning=FALSE}\nlibrary(ggplot2)\nx <- rnorm(1000)\n\nqplot(x, geom=\"histogram\")\n\n```\n\nWoo! **Bold important words!**\n\n<div>\\[ \\text{E[}y_i\\vert x_i\\text{]} = \\lambda_i = \\text{exp (} \\beta_1 + \\beta_2 x_{2i} + \\dots + \\beta_k x_{ki}) \\]</div>\n\nConclusion\n=========================\nRead this shiz!",
     "created" : 1390328618812.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "585809535",
+    "hash" : "2466270429",
     "id" : "2547A788",
-    "lastKnownWriteTime" : 1390328901,
+    "lastKnownWriteTime" : 1390694476,
     "path" : "~/GitHub/lmjackson.github.io/knitr/2014-01-21-First-Post.Rmd",
     "properties" : {
         "tempName" : "Untitled1"

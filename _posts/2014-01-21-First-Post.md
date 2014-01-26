@@ -24,5 +24,8 @@ qplot(x, geom = "histogram")
 
 Woo! **Bold important words!**
 
-###Conclusion
+<div>\[ \text{E[}y_i\vert x_i\text{]} = \lambda_i = \text{exp (} \beta_1 + \beta_2 x_{2i} + \dots + \beta_k x_{ki}) \]</div>
+
+Conclusion
+=========================
 Read this shiz!
