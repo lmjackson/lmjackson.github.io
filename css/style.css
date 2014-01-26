@@ -45,6 +45,14 @@ strong {
 	color: #2A2A2A;
 }
 
+#duo1{float:left;width:50%;}
+#duo2{float:right;width:50%;}
+.inner{margin:5px 30px;}
+
+/* Clearing fix */
+.clearfix:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
+
+
 /* Copyright */
 
 #copyright {
