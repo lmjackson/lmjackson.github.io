@@ -1,12 +1,12 @@
 {
-    "contents" : "---\nlayout: default\nroot: \"\"\n---\n<div>  \n  {% assign post = site.posts.first %}\n  {% if post.title %}<h2>{{ post.title }}</h2>{% endif %}\n  {{ post.content }}\n</div>",
+    "contents" : "---\nlayout: blog\nroot: \"\"\n---\n<div>  \n  {% assign post = site.posts.first %}\n  {% if post.title %}<h2>{{ post.title }}</h2>{% endif %}\n  {{ post.content }}\n</div>",
     "created" : 1390328330522.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3975752449",
+    "hash" : "3820489359",
     "id" : "25819B36",
-    "lastKnownWriteTime" : 1390328345,
+    "lastKnownWriteTime" : 1390696652,
     "path" : "~/GitHub/lmjackson.github.io/index.html",
     "properties" : {
         "tempName" : "Untitled1"
