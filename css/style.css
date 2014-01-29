@@ -46,8 +46,8 @@ strong {
 }
 .float-left  { float: left; }
 .float-right { float: right; }
-#duo1{float:left;width:45%;}
-#duo2{float:right;width:45%;}
+#duo1{float:left;width:50%;}
+#duo2{float:right;width:50%;}
 .inner{margin:5px 30px;}
 
 /* Clearing fix */

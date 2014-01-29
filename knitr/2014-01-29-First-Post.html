@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>[1] 2</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<p>Well, Wickham&#39;s done it again: computational bliss for all. He has, through the creation of a single package, destroyed the market for all time-telling devices. With <strong>lubridate</strong> you can determine what day of the week Christmas falls on 7 years from now, produce a count-down to the premiere of The Hunger Games with a single line of code (yes, even in minutes or seconds), or create a linear model of your happiness as a function of the number of days since the last visit from your in-laws. Almost anything you can think of involving dates or times can be computed using <strong>lubridate</strong>. Puppy and daffodil calendars are a thing of the past. But don&#39;t you worry&ndash;there&#39;s probably an option to generate images of puppies with each date-time object. If not, I&#39;m sure we can send Hadley a tweet asking to add an argument&ndash;such as <strong>(&hellip;image=&ldquo;puppy&rdquo;)</strong> or <strong>&ldquo;kitten&rdquo;</strong> or <strong>&ldquo;flower&rdquo;</strong> or <strong>&ldquo;breathtaking_natural_landscape&rdquo;</strong>&ndash;to some of the <strong>lubridate</strong> functions. I&#39;m sure he&#39;s open to valid suggestions.</p>
+
+<p>The driving force behind the <strong>lubridate</strong> package is rather simple:  Date-time objects can be difficult to analyze in R because of the various forms they can take. There do exist other packages and functions to facilitate the intake and manipulation of such objects, but none as intuitive, efficient, or streamlined as <strong>lubridate</strong>. (This seems to be a common trend among Wickham&#39;s developments.) Some of the general applications of the package include: parsing date-time data, extracting and altering components of an object (e.g. seconds, minutes, hours, days, weeks, etc.), performing arithmetic operations on time-spans and date-time objects, and accounting for and executing computations involving time zones and daylight savings time. </p>
+
+<p>Specifically, <strong>lubridate</strong> takes a character string representing a date-time object and spits it out in a universal form:  &ldquo;yyyy-mm-dd UTC&rdquo; (where UTC is the Coordinated Universal time zone). The function you use depends on the format of the date-time object you are inputting. For example, you would use <strong>mdy()</strong> if inputting &ldquo;05-05-2014&rdquo; in order to represent Cinco de Mayo in 2014. If you give a name to this object&ndash;say, &ldquo;cinco&rdquo;&ndash;then you can extract the year, month, or even weekday of this particular date. To illustrate:</p>
+
+<p>{% highlight r %}
+library(lubridate)
+cinco &lt;- mdy(&ldquo;05-05-2014&rdquo;)
+wday(cinco)
+{% endhighlight %}</p>
+
+<p>{% highlight text %}</p>
+
+<h2>[1] 2</h2>
+
+<p>{% endhighlight %}</p>
+
+<p>{% highlight r %}</p>
+
+<p>wday(cinco, label = TRUE)
+{% endhighlight %}</p>
+
+<p>{% highlight text %}</p>
+
+<h2>[1] Mon</h2>
+
+<h2>Levels: Sun &lt; Mon &lt; Tues &lt; Wed &lt; Thurs &lt; Fri &lt; Sat</h2>
+
+<p>{% endhighlight %}</p>
+
+<p>{% highlight r %}</p>
+
+<p>wday(cinco, label = TRUE, abbr = FALSE)
+{% endhighlight %}</p>
+
+<p>{% highlight text %}</p>
+
+<h2>[1] Monday</h2>
+
+<h2>7 Levels: Sunday &lt; Monday &lt; Tuesday &lt; Wednesday &lt; Thursday &lt; &hellip; &lt; Saturday</h2>
+
+<p>{% endhighlight %}</p>
+
+<p>As you can see, there are default arguments that, if not specified, will return the weekday as a numeric. If you want the character name of the weekday, use &ldquo;label=TRUE,&rdquo; and if you want the day written out in entirety rather than abbreviated, use &ldquo;abbr=FALSE.&rdquo; Don&#39;t pretend this isn&#39;t already your favorite application of <strong>lubridate</strong>. Everyone is dying to know if their birthday falls on a Friday or a Monday. As a completely unbiased and unassuming example, my birthday this year falls on a:</p>
+
+<p>{% highlight r %}
+bday &lt;- ymd(&ldquo;2014-10-10&rdquo;)
+wday(bday, label = TRUE, abbr = FALSE)
+{% endhighlight %}</p>
+
+<p>{% highlight text %}</p>
+
+<h2>[1] Friday</h2>
+
+<h2>7 Levels: Sunday &lt; Monday &lt; Tuesday &lt; Wednesday &lt; Thursday &lt; &hellip; &lt; Saturday</h2>
+
+<p>{% endhighlight %}</p>
+
+<p>It&#39;s going to be a good year for me. (Feel free to send e-cards or iTunes credits.) I know what you&#39;re doing this very instant, but hold your horses, birthday boo. There are plenty of other amazing tools this package has to offer. So stop right there&ndash;yes, at &ldquo;<strong>install.packages(lubrida&hellip;</strong>&rdquo;&ndash;and keep reading!</p>
+
+<p>Arithmetic with date-times is simplified by <strong>lubridate</strong>&#39;s implicit knowledge of relative versus exact lengths of time via the following four object classes: instants (a specific moment in time), intervals (a time span between two instants), durations (generic time span, in seconds, that lacks start and end date references), and periods (time spans recorded in time units larger than seconds). Because of the way <strong>lubridate</strong> standardizes date-time objects, we can easily compute division of time-spans. However, we cannot divide periods, as they lack the consistency that durations and intervals possess. Another useful application of <strong>lubridate</strong> is rounding date-time objects. <strong>round_date()</strong> rounds up or down, <strong>floor_date()</strong> rounds down, and <strong>ceiling_date()</strong> rounds up. Each of these functions employs an argument to specify which unit of time it should round to (day, month, year, etc.). One way this could be useful is to find the first or last day of a month, either as a date or a weekday. Here I give an example of how to determine which weekday the last day of December 2026 is:</p>
+
+<p>{% highlight r %}
+nye &lt;- dmy(&ldquo;31-12-2026&rdquo;)
+wday(ceiling_date(nye, &ldquo;month&rdquo;) - days(1), label = TRUE, abbr = FALSE)
+{% endhighlight %}</p>
+
+<p>{% highlight text %}</p>
+
+<h2>[1] Thursday</h2>
+
+<h2>7 Levels: Sunday &lt; Monday &lt; Tuesday &lt; Wednesday &lt; Thursday &lt; &hellip; &lt; Saturday</h2>
+
+<p>{% endhighlight %}</p>
+
+<p>So, you can look forward to an extended New Years weekend in 12 years!</p>
+
+<p>Another very useful aspect of <strong>lubridate</strong> is that it effectively untangles commonly sticky webs, such as daylight savings time and varying time zones, which often make base R computations more complicated than they need to be. Ultimately, this package is an extremely beneficial tool due to its overall ability to standardize dates and times. Once standardized, it is easy to perform operations, calculations, and manipulations with brevity of code. More advanced applications allow for modeling of date-time processes as well. Moral of the story is&hellip; if you&#39;re working with any data related to dates or times and don&#39;t want to jeopardize your presumably healthy relationship with R, there is only one answer: <strong>lubridate</strong>.</p>
+
+</body>
+
+</html>
+

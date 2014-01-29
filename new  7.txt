@@ -1,0 +1,12 @@
+Problems
+mathjax
+figures for blog posts
+blog template highlighted menu
+
+Lindsey can do on own
+cv
+content
+
+Things left to look in to
+dropdowns
+more sophisticated archiving
