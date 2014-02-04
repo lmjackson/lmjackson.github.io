@@ -1,0 +1,94 @@
+---
+layout: blog
+root: "../../../../"
+title: "2-4-6-8! Everybody lubridate!"
+---
+
+
+
+Well, Wickham's done it again: computational bliss for all. He has, through the creation of a single package, destroyed the market for all time-telling devices. With `lubridate` you can determine what day of the week Christmas falls on 7 years from now, produce a count-down to the premiere of The Hunger Games with a single line of code (yes, even in minutes or seconds), or create a linear model of your happiness as a function of the number of days since the last visit from your in-laws. Almost anything you can think of involving dates or times can be computed using `lubridate`. Puppy and daffodil calendars are a thing of the past. But don't you worry--there's probably an option to generate images of puppies with each date-time object. If not, I'm sure we can send Hadley a tweet asking to add an argument--such as `(...image="puppy")` or `"kitten"` or `"flower"` or `"breathtaking_natural_landscape"`--to some of the `lubridate` functions. I'm sure he's open to valid suggestions.
+</br>  
+The driving force behind the `lubridate` package is rather simple:  Date-time objects can be difficult to analyze in R because of the various forms they can take. There do exist other packages and functions to facilitate the intake and manipulation of such objects, but none as intuitive, efficient, or streamlined as `lubridate`. (This seems to be a common trend among Wickham's developments.) Some of the general applications of the package include: parsing date-time data, extracting and altering components of an object (e.g. seconds, minutes, hours, days, weeks, etc.), performing arithmetic operations on time-spans and date-time objects, and accounting for and executing computations involving time zones and daylight savings time. 
+<br></br>
+Specifically, `lubridate` takes a character string representing a date-time object and spits it out in a universal form:  "yyyy-mm-dd UTC" (where UTC is the Coordinated Universal time zone). The function you use depends on the format of the date-time object you are inputting. For example, you would use `mdy()` if inputting "05-05-2014" in order to represent Cinco de Mayo in 2014. If you give a name to this object--say, "cinco"--then you can extract the year, month, or even weekday of this particular date. To illustrate:
+<br></br>
+
+{% highlight r %}
+library(lubridate)
+cinco <- mdy("05-05-2014")
+wday(cinco)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## [1] 2
+{% endhighlight %}
+
+
+
+{% highlight r %}
+
+wday(cinco, label = TRUE)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## [1] Mon
+## Levels: Sun < Mon < Tues < Wed < Thurs < Fri < Sat
+{% endhighlight %}
+
+
+
+{% highlight r %}
+
+wday(cinco, label = TRUE, abbr = FALSE)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## [1] Monday
+## 7 Levels: Sunday < Monday < Tuesday < Wednesday < Thursday < ... < Saturday
+{% endhighlight %}
+
+</br>
+As you can see, there are default arguments that, if not specified, will return the weekday as a numeric. If you want the character name of the weekday, use "label=TRUE," and if you want the day written out in entirety rather than abbreviated, use "abbr=FALSE." Don't pretend this isn't already your favorite application of `lubridate`. Everyone is dying to know if their birthday falls on a Friday or a Monday. As a completely unbiased and unassuming example, my birthday this year falls on a:
+<br></br>
+
+{% highlight r %}
+bday <- ymd("2014-10-10")
+wday(bday, label = TRUE, abbr = FALSE)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## [1] Friday
+## 7 Levels: Sunday < Monday < Tuesday < Wednesday < Thursday < ... < Saturday
+{% endhighlight %}
+
+</br>
+It's going to be a good year for me. (Feel free to send e-cards or iTunes credits.) I know what you're doing this very instant, but hold your horses, birthday boo. There are plenty of other amazing tools this package has to offer. So stop right there--yes, at "`install.packages(lubrida...`"--and keep reading!
+<br></br>
+Arithmetic with date-times is simplified by `lubridate`'s implicit knowledge of relative versus exact lengths of time via the following four object classes: instants (a specific moment in time), intervals (a time span between two instants), durations (generic time span, in seconds, that lacks start and end date references), and periods (time spans recorded in time units larger than seconds). Because of the way `lubridate` standardizes date-time objects, we can easily compute division of time-spans. However, we cannot divide periods, as they lack the consistency that durations and intervals possess. Another useful application of `lubridate` is rounding date-time objects. `round_date()` rounds up or down, `floor_date()` rounds down, and `ceiling_date()` rounds up. Each of these functions employs an argument to specify which unit of time it should round to (day, month, year, etc.). One way this could be useful is to find the first or last day of a month, either as a date or a weekday. Here I give an example of how to determine which weekday the last day of December 2026 is:
+<br></br>
+
+{% highlight r %}
+nye <- dmy("31-12-2026")
+wday(ceiling_date(nye, "month") - days(1), label = TRUE, abbr = FALSE)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## [1] Thursday
+## 7 Levels: Sunday < Monday < Tuesday < Wednesday < Thursday < ... < Saturday
+{% endhighlight %}
+
+</br>
+So, you can look forward to an extended New Years weekend in 12 years!
+<br></br>
+Another very useful aspect of `lubridate` is that it effectively untangles commonly sticky webs, such as daylight savings time and varying time zones, which often make base R computations more complicated than they need to be. Ultimately, this package is an extremely beneficial tool due to its overall ability to standardize dates and times. Once standardized, it is easy to perform operations, calculations, and manipulations with brevity of code. More advanced applications allow for modeling of date-time processes as well. Moral of the story is... if you're working with any data related to dates or times and don't want to jeopardize your presumably healthy relationship with R, there is only one answer: `lubridate`.
+
