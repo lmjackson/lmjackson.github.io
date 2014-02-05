@@ -67,3 +67,5 @@ What's going on here? Some crazy cat lady wanted to make it seem like there's a 
 As you can see from the above example, immediate and full access to data and methods of analysis also serve as a check on accuracy and integrity. As much as I would love to fudge data to show that eating cheese actually lowers the risk of heart disease, because of reproducibility I cannot. Many, who are not living in a false reality where cheese is the new acai berry, would undoubtedly call me out on my deceptive methods and innacurate calculations. So now, because of reproducible code and dynamic documents, all the readers of my blog--like President Obama, Ellen DeGeneres, and Bill Nye the Science Guy--can see what I'm doing, how I'm doing it, and where my data came from. Ugh. I'm going to get *so* many calls from the President...
 <br></br>
 <br></br>
+
+![alt text](http://salmanspets.files.wordpress.com/2012/01/american-bobtail-cat.jpg)
