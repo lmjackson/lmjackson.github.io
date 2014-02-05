@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title></title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+<!-- Styles for R syntax highlighter -->
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+<!-- R syntax highlighter -->
+<script type="text/javascript">
+var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function f(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function b(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function h(t,s){var p="";for(var r=0;r<t.childNodes.length;r++){if(t.childNodes[r].nodeType==3){var q=t.childNodes[r].nodeValue;if(s){q=q.replace(/\n/g,"")}p+=q}else{if(t.childNodes[r].nodeName=="BR"){p+="\n"}else{p+=h(t.childNodes[r])}}}if(/MSIE [678]/.test(navigator.userAgent)){p=p.replace(/\r/g,"\n")}return p}function a(s){var r=s.className.split(/\s+/);r=r.concat(s.parentNode.className.split(/\s+/));for(var q=0;q<r.length;q++){var p=r[q].replace(/^language-/,"");if(e[p]){return p}}}function c(q){var p=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{if(s.childNodes[r].nodeType==1){p.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);p.push({event:"stop",offset:t,node:s.childNodes[r]})}}}}return t})(q,0);return p}function k(y,w,x){var q=0;var z="";var s=[];function u(){if(y.length&&w.length){if(y[0].offset!=w[0].offset){return(y[0].offset<w[0].offset)?y:w}else{return w[0].event=="start"?y:w}}else{return y.length?y:w}}function t(D){var A="<"+D.nodeName.toLowerCase();for(var B=0;B<D.attributes.length;B++){var C=D.attributes[B];A+=" "+C.nodeName.toLowerCase();if(C.value!==undefined&&C.value!==false&&C.value!==null){A+='="'+m(C.value)+'"'}}return A+">"}while(y.length||w.length){var v=u().splice(0,1)[0];z+=m(x.substr(q,v.offset-q));q=v.offset;if(v.event=="start"){z+=t(v.node);s.push(v.node)}else{if(v.event=="stop"){var p,r=s.length;do{r--;p=s[r];z+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);s.splice(r,1);while(r<s.length){z+=t(s[r]);r++}}}}return z+m(x.substr(q))}function j(){function q(x,y,v){if(x.compiled){return}var u;var s=[];if(x.k){x.lR=f(y,x.l||hljs.IR,true);for(var w in x.k){if(!x.k.hasOwnProperty(w)){continue}if(x.k[w] instanceof Object){u=x.k[w]}else{u=x.k;w="keyword"}for(var r in u){if(!u.hasOwnProperty(r)){continue}x.k[r]=[w,u[r]];s.push(r)}}}if(!v){if(x.bWK){x.b="\\b("+s.join("|")+")\\s"}x.bR=f(y,x.b?x.b:"\\B|\\b");if(!x.e&&!x.eW){x.e="\\B|\\b"}if(x.e){x.eR=f(y,x.e)}}if(x.i){x.iR=f(y,x.i)}if(x.r===undefined){x.r=1}if(!x.c){x.c=[]}x.compiled=true;for(var t=0;t<x.c.length;t++){if(x.c[t]=="self"){x.c[t]=x}q(x.c[t],y,false)}if(x.starts){q(x.starts,y,false)}}for(var p in e){if(!e.hasOwnProperty(p)){continue}q(e[p].dM,e[p],true)}}function d(B,C){if(!j.called){j();j.called=true}function q(r,M){for(var L=0;L<M.c.length;L++){if((M.c[L].bR.exec(r)||[null])[0]==r){return M.c[L]}}}function v(L,r){if(D[L].e&&D[L].eR.test(r)){return 1}if(D[L].eW){var M=v(L-1,r);return M?M+1:0}return 0}function w(r,L){return L.i&&L.iR.test(r)}function K(N,O){var M=[];for(var L=0;L<N.c.length;L++){M.push(N.c[L].b)}var r=D.length-1;do{if(D[r].e){M.push(D[r].e)}r--}while(D[r+1].eW);if(N.i){M.push(N.i)}return f(O,M.join("|"),true)}function p(M,L){var N=D[D.length-1];if(!N.t){N.t=K(N,E)}N.t.lastIndex=L;var r=N.t.exec(M);return r?[M.substr(L,r.index-L),r[0],false]:[M.substr(L),"",true]}function z(N,r){var L=E.cI?r[0].toLowerCase():r[0];var M=N.k[L];if(M&&M instanceof Array){return M}return false}function F(L,P){L=m(L);if(!P.k){return L}var r="";var O=0;P.lR.lastIndex=0;var M=P.lR.exec(L);while(M){r+=L.substr(O,M.index-O);var N=z(P,M);if(N){x+=N[1];r+='<span class="'+N[0]+'">'+M[0]+"</span>"}else{r+=M[0]}O=P.lR.lastIndex;M=P.lR.exec(L)}return r+L.substr(O,L.length-O)}function J(L,M){if(M.sL&&e[M.sL]){var r=d(M.sL,L);x+=r.keyword_count;return r.value}else{return F(L,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){y+=L;M.buffer=""}else{if(M.eB){y+=m(r)+L;M.buffer=""}else{y+=L;M.buffer=r}}D.push(M);A+=M.r}function G(N,M,Q){var R=D[D.length-1];if(Q){y+=J(R.buffer+N,R);return false}var P=q(M,R);if(P){y+=J(R.buffer+N,R);I(P,M);return P.rB}var L=v(D.length-1,M);if(L){var O=R.cN?"</span>":"";if(R.rE){y+=J(R.buffer+N,R)+O}else{if(R.eE){y+=J(R.buffer+N,R)+O+m(M)}else{y+=J(R.buffer+N+M,R)+O}}while(L>1){O=D[D.length-2].cN?"</span>":"";y+=O;L--;D.length--}var r=D[D.length-1];D.length--;D[D.length-1].buffer="";if(r.starts){I(r.starts,"")}return R.rE}if(w(M,R)){throw"Illegal"}}var E=e[B];var D=[E.dM];var A=0;var x=0;var y="";try{var s,u=0;E.dM.buffer="";do{s=p(C,u);var t=G(s[0],s[1],s[2]);u+=s[0].length;if(!t){u+=s[1].length}}while(!s[2]);if(D.length>1){throw"Illegal"}return{r:A,keyword_count:x,value:y}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:m(C)}}else{throw H}}}function g(t){var p={keyword_count:0,r:0,value:m(t)};var r=p;for(var q in e){if(!e.hasOwnProperty(q)){continue}var s=d(q,t);s.language=q;if(s.keyword_count+s.r>r.keyword_count+r.r){r=s}if(s.keyword_count+s.r>p.keyword_count+p.r){r=p;p=s}}if(r.language){p.second_best=r}return p}function i(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function n(t,w,r){var x=h(t,r);var v=a(t);var y,s;if(v){y=d(v,x)}else{return}var q=c(t);if(q.length){s=document.createElement("pre");s.innerHTML=y.value;y.value=k(q,c(s),x)}y.value=i(y.value,w,r);var u=t.className;if(!u.match("(\\s|^)(language-)?"+v+"(\\s|$)")){u=u?(u+" "+v):v}if(/MSIE [678]/.test(navigator.userAgent)&&t.tagName=="CODE"&&t.parentNode.tagName=="PRE"){s=t.parentNode;var p=document.createElement("div");p.innerHTML="<pre><code>"+y.value+"</code></pre>";t=p.firstChild.firstChild;p.firstChild.cN=s.cN;s.parentNode.replaceChild(p.firstChild,s)}else{t.innerHTML=y.value}t.className=u;t.result={language:v,kw:y.keyword_count,re:y.r};if(y.second_best){t.second_best={language:y.second_best.language,kw:y.second_best.keyword_count,re:y.second_best.r}}}function o(){if(o.called){return}o.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=b(r[p]);if(q){n(q,hljs.tabReplace)}}}function l(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",o,false);window.addEventListener("load",o,false)}else{if(window.attachEvent){window.attachEvent("onload",o)}else{window.onload=o}}}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=n;this.initHighlighting=o;this.initHighlightingOnLoad=l;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.ER="(?![\\s\\S])";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(r,s){var p={};for(var q in r){p[q]=r[q]}if(s){for(var q in s){p[q]=s[q]}}return p}}();hljs.LANGUAGES.cpp=function(){var a={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1,restrict:1,_Bool:1,complex:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};return{dM:{k:a,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'\\\\?.",e:"'",i:"."},{cN:"number",b:"\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},{cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:a,r:10,c:["self"]}]}}}();hljs.LANGUAGES.r={dM:{c:[hljs.HCM,{cN:"number",b:"\\b0[xX][0-9a-fA-F]+[Li]?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+(?:[eE][+\\-]?\\d*)?L\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+\\.(?!\\d)(?:i\\b)?",e:hljs.IMMEDIATE_RE,r:1},{cN:"number",b:"\\b\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"keyword",b:"(?:tryCatch|library|setGeneric|setGroupGeneric)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\.",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\d+(?![\\w.])",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\b(?:function)",e:hljs.IMMEDIATE_RE,r:2},{cN:"keyword",b:"(?:if|in|break|next|repeat|else|for|return|switch|while|try|stop|warning|require|attach|detach|source|setMethod|setClass)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"literal",b:"(?:NA|NA_integer_|NA_real_|NA_character_|NA_complex_)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"literal",b:"(?:NULL|TRUE|FALSE|T|F|Inf|NaN)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"identifier",b:"[a-zA-Z.][a-zA-Z0-9._]*\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"<\\-(?!\\s*\\d)",e:hljs.IMMEDIATE_RE,r:2},{cN:"operator",b:"\\->|<\\-",e:hljs.IMMEDIATE_RE,r:1},{cN:"operator",b:"%%|~",e:hljs.IMMEDIATE_RE},{cN:"operator",b:">=|<=|==|!=|\\|\\||&&|=|\\+|\\-|\\*|/|\\^|>|<|!|&|\\||\\$|:",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"%",e:"%",i:"\\n",r:1},{cN:"identifier",b:"`",e:"`",r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE],r:0},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"paren",b:"[[({\\])}]",e:hljs.IMMEDIATE_RE,r:0}]}};
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+</head>
+
+<body>
+<p>I&#39;m going to ask you a series of multiple choice questions. Please answer honestly but also the way I want you to answer.</p>
+
+<ol>
+<li><p>We&#39;re working on a group project. I add my section to the paper. Now it&#39;s your turn to write the conclusion. How would you want me to send the updated version of the paper to you?<br/>
+a) as a PDF file<br/>
+b) as a magical type of file that can be edited and then generate the newer version of the PDF<br/>
+c) as a Word Doc (don&#39;t pick this)<br/>
+d) both a and b<br/>
+e) both d and c but not b<br/>
+f) at least two of the above but I&#39;m not sure which two<br/>
+g) I pick b because I think Gandalf might be involved somehow  </p></li>
+<li><p>You&#39;re reading an interesting article on the growing average length of cat tails since the 1990s. There are many beautiful charts and graphs, and you know the author used R to produce these meowvelous graphics, but after extensive googling you can&#39;t find examples of the R code anywhere. The author also cited the data, but you know she manipulated it in various ways before her computations and would like to see exactly what she did, but&hellip; you can&#39;t. It&#39;s just a bunch of words, graphics, and pictures of cats. How does this make you feel?<br/>
+a) happy<br/>
+b) angry<br/>
+c) indifferent (don&#39;t pick this)<br/>
+d) pretty bad but the kitty pics make up for it<br/>
+e) both b and d  </p></li>
+<li><p>Gandalf arrives at your doorstep and starts babbling about dynamic documents, compendiums, something about the end of the world, and being able to update &ldquo;Mission: Mt. Doom&rdquo; from afar without having to take 4-day trips to hold a meeting at a centralized location in Middle Earth every time there&#39;s a change in the plan. Basically, he has a solution to both of your problems above. What&#39;s your response?<br/>
+a) &ldquo;You&#39;re incredible!&rdquo;<br/>
+b) &ldquo;Gandalf, you crazy.&rdquo;<br/>
+c) &ldquo;I want to go to there.&rdquo;<br/>
+d) &ldquo;Sign me up!&rdquo;<br/>
+e) all of the above  </p></li>
+</ol>
+
+<p>All jokes aside, I think you see where I&#39;m going with this. There are remarkable tools at your fingertips that, to put it very generally, will make collaboration and sharing of code, data, and documents extremely easy and pliable. Robert Gentleman and Temple Lang discuss this in their paper &ldquo;Statistical Analyses and Reproducible Research.&rdquo; It can be frustrating and inefficient when working in a group on research or projects and you find yourself sending the &ldquo;most updated&rdquo; version of the work back and forth, back and forth, back and forth&hellip; Sometimes multiple people made changes independently, and now there are multiple copies of the project with some changes but not all, and you must painstakingly go through each version, find where they differ, cut and paste, piece it all back together, etc. It is just as frustrating to be reading about someone else&#39;s work but have no insight into her programming methods, code, or data. </p>
+
+<p>Luckily, there is such a thing as &ldquo;reproducible&rdquo; research, which allows you to bypass these types of problems. The term comes from the idea that you have the ability to fully reproduce the work yourself, without making duplicate copies of data, code, or output files. Your colleagues and classmates can do the same. This is in line with the &ldquo;DRY&rdquo; principle: Don&#39;t Repeat Yourself. If you have not heard of this before, it the overall jist of it is: duplicate things are dangerous. We want one copy of the data and code that can be accessed by anyone on the team, rather than local copies floating around everywhere. Remember that one time you worked on research over the holidays on your grandma&#39;s computer? And then you had to change your file path to &ldquo;&hellip;/Users/Granny/Documents/PumpkinsWork&rdquo;? Yeah, we don&#39;t need that. More importantly, we don&#39;t want that. We want to edit one file stored in one location. This is especially useful that one day 7 months into your project when you realize that one of your initial computations, in which you calculated an AVERAGE, was wrong, and it completely changed your graphs, analysis, key findings in the paper, etc&hellip; (not that this happened to me, ever&ndash;this is a completely hypothetical example of course). Anyway, by not &ldquo;repeating yourself&rdquo; with your data and code and files, it will be very easy to make the necessary change in the code, fix the error, and&hellip; Move! That! Bus! I mean&ndash;recompile that PDF. You know what they say&hellip; If at first you don&#39;t succeed, DRY, DRY again.</p>
+
+<p>Gentleman and Lang go into detail on reproducible research and its applications in dynamic documents (rather than static ones, like the Word or PDF file that keeps getting sent back and forth between everyone for editing). They begin by describing a compendium, which is a mechanism that combines data, text, and supporting software into a form that can be distributed and executed by other users. A compendium is what transforms a static document into a dynamic one, similar to the way LaTeX generates a PDF from the code you have written.</p>
+
+<p>As mentioned above, one of the primary advantages of the reproducible code used in dynamic documents is the ease it offers to researchers and academes who are collaborating on a single study. No more sending pix msgs of your code. No more faxing instructions and updates. No. More. Floppy disks! The applicability of dynamic documents can be extended outside the sphere of research groups and teams to the general public: interested readers of a blog or paper, for example. Dynamic documents allow users to have access to code, files, etc. and enable them to generate the same output themselves on their own computer. For example, right now you are able to see the R code that an anonymous feline fanatic used to generate the graph of cat body weight vs. heart weight below:</p>
+
+<pre><code class="r">cats &lt;- read.csv(&quot;http://www.calvin.edu/~stob/data/cats.csv&quot;)
+library(ggplot2)
+qplot(Bwt, Hwt, data = cats, colour = Sex)
+</code></pre>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-1"/> </p>
+
+<p>Cool! Cats! We see a positive relationship between body weight and heart weight, which seems reasonable, and we have access to the code and the R functions used to generate the plot. We could reproduce this in the exact same fashion. But what if all of a sudden cat woman spits out a plot of heart weight vs. tail length. And she doesn&#39;t show you the code.
+<img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-2"/> </p>
+
+<p>From this plot, you would probably gather that there is a pretty strong positive relationship between a cat&#39;s heart weight and the length of her tail. But is this legit? More importantly, where did this tail data come from?! Asking questions is good. We should always be questioning data collection and methods of analysis, not necessarily in a cynical or accusatory way, but simply in a healthy way. We should want to know where the data come from, and how conclusions have been made. Reproducible code allows us to find answers to such questions. Let&#39;s see what we find out when the code and data are viewable, and therefore reproducible&ndash;by you!</p>
+
+<pre><code class="r">cats$tail &lt;- rnorm(nrow(cats), mean = 11, sd = 2)
+cats$tail &lt;- round(cats$tail, digits = 1)
+cats$tail &lt;- sort(cats$tail, decreasing = FALSE)
+head(cats)
+</code></pre>
+
+<pre><code>##   Sex Bwt Hwt tail
+## 1   F 2.0 7.0  6.7
+## 2   F 2.0 7.4  6.9
+## 3   F 2.0 9.5  7.7
+## 4   F 2.1 7.2  7.7
+## 5   F 2.1 7.3  7.9
+## 6   F 2.1 7.6  7.9
+</code></pre>
+
+<pre><code class="r">qplot(Hwt, tail, data = cats, colour = Sex)
+</code></pre>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-3"/> </p>
+
+<p>What&#39;s going on here? Some crazy cat lady wanted to make it seem like there&#39;s a positive relationship between heart weight and tail length. Why? Who knows. Maybe to show that short-tailed cats have hearts of stone, and thus all 27 of her long-tailed cats are the sweetest kitties in the world. Now that her code is visible (and reproducible), we can see that she did some pretty sneaky stuff to get the result she wanted. She created a new variable in the data set, but it&#39;s composed of random numbers! From a normal distribution with mean 11 and standard deviation 2. Where did she get this information? Then she rounded all the numeric values of the new <code>cats$tail</code> variable to one decimal place, most likely to match the format of the other two variables. THEN she sorted <code>cats$tail</code> in increasing order to try to achieve a more positive association between heart weight and tail length. So&hellip; now that you have access to her data and methods, what do you think? Is there a relationship between tail length and heart weight? No. Not based on her methods anyway. Is there a relationship between number of cats owned and mental stability? Absolutely. Proof. Right. Here.</p>
+
+<p>As you can see from the above example, immediate and full access to data and methods of analysis also serve as a check on accuracy and integrity. As much as I would love to fudge data to show that eating cheese actually lowers the risk of heart disease, because of reproducibility I cannot. Many, who are not living in a false reality where cheese is the new acai berry, would undoubtedly call me out on my deceptive methods and innacurate calculations. So now, because of reproducible code and dynamic documents, all the readers of my blog&ndash;like President Obama, Ellen DeGeneres, and Bill Nye the Science Guy&ndash;can see what I&#39;m doing, how I&#39;m doing it, and where my data came from. Ugh. I&#39;m going to get <em>so</em> many calls from the President&hellip;</p>
+
+</body>
+
+</html>
+
