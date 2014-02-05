@@ -1,7 +1,7 @@
 ---
 layout: blog
 root: "../../../../"
-title: "If at first you don't succeed, DRY DRY again."
+title: "Chunk the deuce to static files. Reproduce and recompile!"
 ---
 
 I'm going to ask you a series of multiple choice questions. Please answer honestly but also the way I want you to answer.
