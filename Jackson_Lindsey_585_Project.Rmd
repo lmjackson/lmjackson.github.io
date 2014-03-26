@@ -1,0 +1,22 @@
+Analysis of Sound Characteristics to Classify Speakers and Types of Speech
+========================================================
+The motivation behind this project is to be able to classify forms of communication based on various aspects of their respective audio qualities. Not only types of communication but types of speakers, too, will be classified based on sound wave characteristics such as: 
+- Pitch
+- Dynamics
+- Volume
+- Pauses
+- Speed
+- Clarity/pronunciation
+
+The goal will be to analyze, for instance, a .wav file, examine the above characteristics, and determine whether the speaker is male or female, human or automated, and the age of the speaker. Furthermore, the category of speech will be determined (see below).
+
+Data will be collected via youtube videos that will be converted to mp3 files and analyzed using the TuneR package in R. The sound clips will be gathered from the following varieties of speech:
+- Political speeches
+- Talk shows
+- Commercials
+- News reports
+- Academic lectures
+- Instructional speech
+- Narratives/Testimonies
+- Slam poetry/Spoken word
+
